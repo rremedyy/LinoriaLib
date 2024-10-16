@@ -3541,6 +3541,7 @@ function Library:CreateWindow(...)
                 Cursor.Visible = true;
 
                 local CursorOutline = Drawing.new('Triangle');
+                CursorOutline.ZIndex = 1337; -- leet hacker..
                 CursorOutline.Thickness = 1;
                 CursorOutline.Filled = false;
                 CursorOutline.Color = Color3.new(1,1,1);
