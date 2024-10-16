@@ -15,7 +15,7 @@ local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
-ScreenGui.Parent = CoreGui;
+ScreenGui.Parent = LocalPlayer.PlayerGui;
 
 local Toggles = {};
 local Options = {};
@@ -3536,13 +3536,11 @@ function Library:CreateWindow(...)
                 local State = InputService.MouseIconEnabled;
 
                 local Cursor = Drawing.new('Triangle');
-                Cursor.ZIndex = 1234;
                 Cursor.Thickness = 1;
                 Cursor.Filled = true;
                 Cursor.Visible = true;
 
                 local CursorOutline = Drawing.new('Triangle');
-                CursorOutline.ZIndex = 5678;
                 CursorOutline.Thickness = 1;
                 CursorOutline.Filled = false;
                 CursorOutline.Color = Color3.new(0, 0, 0);
