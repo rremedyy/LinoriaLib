@@ -1407,12 +1407,6 @@ do
 		Groupbox:AddBlank(5);
 		Groupbox:Resize();
 
-		function Label:SetValue(Val)
-			TextLabel.Text = Val;
-		end;
-
-		Options[Idx] = Label;
-
 		return Label;
 	end;
 
