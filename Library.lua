@@ -1366,6 +1366,7 @@ do
 			Size = UDim2.new(1, -4, 0, 15);
 			TextSize = 14;
 			Text = Text;
+			RichText = true;
 			TextWrapped = DoesWrap or false,
 			TextXAlignment = Enum.TextXAlignment.Left;
 			ZIndex = 5;
@@ -1405,6 +1406,12 @@ do
 
 		Groupbox:AddBlank(5);
 		Groupbox:Resize();
+
+		function Label:SetValue(Val)
+			TextLabel.Text = Val;
+		end;
+
+		Options[Idx] = Label;
 
 		return Label;
 	end;
